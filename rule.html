@@ -1,0 +1,25 @@
+<div>
+    <div>Native photo</div>
+    <img src="rule-576x80px-20cm.png"/>
+</div>
+<div id="real_zone">
+    <div>In real size</div>
+    <img id="real" src="rule-576x80px-20cm.png"/>
+</div>
+<div id="inch" style="width: 1 in; left: -100%; position: absolute;"></div>
+<script>
+ var img = document.querySelector('#real');
+ img.addEventListener('load', () => {
+     let img_width_cm = 21.7;
+     let img_width_px = img.clientWidth * window.devicePixelRatio;
+     let cm_to_px = 37.7952755906;
+     var expected_px = img_width_cm * cm_to_px;
+     var extend_ratio = expected_px / img_width_px;
+     console.log(expected_px);
+     console.log(img.clientWidth);
+     console.log(img_width_px);
+     console.log(extend_ratio);
+     img.width *= extend_ratio;
+ });
+     console.log('DPI:', document.querySelector('#inch').offsetWidth);
+</script>
