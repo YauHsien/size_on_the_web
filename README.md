@@ -14,3 +14,4 @@
 ## 參考文件
 
 - [Dot-per-pixel 與 Dot-per-inch](https://pixelthing.medium.com/jonesing-for-dpi-and-dppx-45c6245f6ffc)
+- [Resolution Takeaways](https://ryanve.com/_php/airve/chromosome/request.php?request=lab/resolution/)
